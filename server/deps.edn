@@ -1,0 +1,15 @@
+{:paths ["src"]
+ :deps {org.clojure/data.json {:mvn/version "2.5.2"}
+        org.clojure/tools.cli {:mvn/version "1.4.256"}
+        aleph/aleph {:mvn/version "0.9.11"}
+        com.github.seancorfield/next.jdbc {:mvn/version "1.3.1118"}
+        org.xerial/sqlite-jdbc {:mvn/version "3.47.1.0"}}
+ 
+ :aliases
+ {
+  :server
+  {
+   :main-opts ["-m" "com.team766.bearscouts.main"]
+   }
+  }
+ }

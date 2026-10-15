@@ -1,0 +1,66 @@
+{
+    "spec-version": 1,
+    "name": "Medieval Mayhem",
+    "rules": "https://tinyurl.com/mayhem-26",
+    "stages": [
+	{
+	    "name": "auton",
+	    "length": 15,
+	    "type": "standalone",
+	    "actions": [
+		{
+		    "name": "movement",
+		    "pretty-name": "Auton Movement",
+		    "type": "radio",
+		    "fields": [
+			"none",
+			"moved",
+			"balanced"
+		    ]
+		},
+		{
+		    "name": "preloaded",
+		    "pretty-name": "Auton Piece Scoring",
+		    "type": "int"
+		}
+	    ]
+	},
+	{
+	    "name": "teleop",
+	    "length": 90,
+	    "type": "standalone",
+	    "actions": [
+		{
+		    "name": "pickup",
+		    "pretty-name": "Teleop Pickup",
+		    "type": "int"
+		},
+		{
+		    "name": "score-bottom",
+		    "pretty-name": "Teleop Score (bottom)",
+		    "type": "int"
+		},
+		{
+		    "name": "score-middle",
+		    "pretty-name": "Teleop Score (middle)",
+		    "type": "int"
+		},
+		{
+		    "name": "score-top",
+		    "pretty-name": "Teleop Score (top)",
+		    "type": "int"
+		},
+		{
+		    "name": "defense",
+		    "pretty-name": "Defense",
+		    "type": "time"
+		}
+	    ]
+	},
+	{
+	    "name": "endgame",
+	    "length": 30,
+	    "type": "inherited"
+	}
+    ]
+}
