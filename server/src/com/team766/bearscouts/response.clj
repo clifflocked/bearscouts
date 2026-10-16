@@ -10,7 +10,7 @@
    :headers {"content-type" "application/json"}
    :body body})
 
-(defn bad-request
+(defn bad-request []
   (make-response 400 (json/write-str {:error "Bad Request"})))
 
 (defn handler [db req]
